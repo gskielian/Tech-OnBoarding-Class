@@ -9,6 +9,7 @@ Introductory Materials for Getting Started with HW/FW/SW
 - [ ] Firmware - PIC
 - [ ] Firmware - Atmel
 - [ ] Firmware - Arduino
+- [ ] EE - PCB Intro
 - [ ] EE - Altium
 - [ ] EE - KiCad
 - [ ] EE - OrCad/Allegro
