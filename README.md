@@ -16,4 +16,9 @@ Introductory Materials for Getting Started with HW/FW/SW
 - [ ] EE - Eagle
 - [ ] SW - Android
 - [ ] SW - iOS
-- [ ] SW - Google Cloud
+- [ ] ML - Keras
+- [ ] ML - TensorFlow
+- [ ] Cloud - GCloud
+- [ ] IoT - Android Things
+- [ ] IoT - MicroPython-Node
+- [ ] IoT - ESP32
