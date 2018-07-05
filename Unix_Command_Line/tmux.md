@@ -17,7 +17,7 @@ when tmux is open, type:
 
 to detach from the session and leave tmux
 
-## resuming a new session
+## resuming a previous session
 
 `tmux attach -t <name-of-session>`
 
