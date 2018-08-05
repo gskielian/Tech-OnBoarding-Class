@@ -9,4 +9,5 @@ This is for IDE level 1.8.5 -- will do our best to keep this updated.
   - https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
   - [see full directions here](https://learn.adafruit.com/add-boards-arduino-v164/setup)
 3. add the boards you're using, [see steps here](https://learn.adafruit.com/add-boards-arduino-v164/installing-boards)
-4. add any libraries you're using following this documentation, ![libraries image](libraries.png)
+4. add any libraries you're using utilizing the library manager: 
+![libraries image](libraries.png)
