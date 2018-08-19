@@ -89,3 +89,10 @@ Finally reset the mcu to start the program:
 `nrfjprog --family NRF52 --reset`
 
 
+## Interact with Board via Bluetooth wit Nordic Connect App
+
+get the android app here: 
+
+https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en_US
+
+see `image_folder` for steps
