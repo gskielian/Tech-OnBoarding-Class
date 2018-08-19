@@ -14,7 +14,7 @@ If you want to make your own PCB, recommend to grab a Segger JLink programmer.
 
 Go to: https://www.segger.com/downloads/jlink/ and look for the section shown in image below, and download for your operating system:
 
-!(segger download image)[./SeggerDownload.png]
+![segger download image](./SeggerDownload.png)
 
 ## Linux Installation
 
