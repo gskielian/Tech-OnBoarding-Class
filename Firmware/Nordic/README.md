@@ -96,3 +96,56 @@ get the android app here:
 https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en_US
 
 see `image_folder` for steps
+
+## modify the blinky app and compile
+
+from the armgcc subfolder within the pca10056, namely:
+
+`nRF5_SDK_15.0.0_a53641a/examples/ble_peripheral/ble_app_blinky/pca10056/s140/armgcc`
+
+run a vim command to edit the makefile common:
+
+`vim ../../../../../../components/toolchain/gcc/Makefile.common`
+
+add these two lines:
+
+```make
+
+# add these two lines for the correct install root and prefix
+# find these using `which arm-none-eabi-gcc`
+# for me this looked like: 
+# $ which arm-none-eabi-gcc
+# /usr/bin/arm-none-eabi-gcc
+# so the install root and prefix were as follows:
+
+GNU_INSTALL_ROOT=/usr/bin/
+GNU_PREFIX=arm-none-eabi
+
+# don't edit following lines, just added for context : ) 
+# Toolchain commands
+CC      := $(call quote,$(GNU_INSTALL_ROOT)$(GNU_PREFIX)-gcc)
+CXX     := $(call quote,$(GNU_INSTALL_ROOT)$(GNU_PREFIX)-c++)
+AS      := $(call quote,$(GNU_INSTALL_ROOT)$(GNU_PREFIX)-as)
+AR      := $(call quote,$(GNU_INSTALL_ROOT)$(GNU_PREFIX)-ar) -r
+LD      := $(call quote,$(GNU_INSTALL_ROOT)$(GNU_PREFIX)-ld)
+NM      := $(call quote,$(GNU_INSTALL_ROOT)$(GNU_PREFIX)-nm)
+OBJDUMP := $(call quote,$(GNU_INSTALL_ROOT)$(GNU_PREFIX)-objdump)
+OBJCOPY := $(call quote,$(GNU_INSTALL_ROOT)$(GNU_PREFIX)-objcopy)
+SIZE    := $(call quote,$(GNU_INSTALL_ROOT)$(GNU_PREFIX)-size)
+$(if $(shell $(CC) --version),,$(info Cannot find: $(CC).) \
+  $(info Please set values in: "$(abspath $(TOOLCHAIN_CONFIG_FILE))") \
+  $(info according to the actual configuration of your system.) \
+  $(error Cannot continue))
+```
+
+afterwards the commands are:
+
+```sh
+make clean
+make flash
+```
+and you should have compiled a new hex and flashed it.
+
+try modding as shown in the sample_main.c (see the blinky section) and alter the blink behavior.
+
+Congrats! You're now developing on the nrf52 platforms : ) 
