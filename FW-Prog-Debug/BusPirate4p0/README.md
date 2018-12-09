@@ -17,6 +17,6 @@ since for me it shows up as `/dev/ttyACM0` I'd use the following to connect:
 
 # utilizing
 
-if all went well you should now see a prompt :firecracker:
+if all went well you should now see a prompt :fireworks:
 
 Type `?` in the prompt to see possibilities.
