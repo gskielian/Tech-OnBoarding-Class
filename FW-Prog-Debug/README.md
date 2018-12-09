@@ -1,0 +1,7 @@
+- [ ] Bus Pirate
+- [ ] Digilent Analog Discovery 2
+- [ ] JLink Programmer
+- [ ] STLink V2
+- [ ] FTDI Cables
+- [ ] Saleae DLA
+- [ ] PicoScope
