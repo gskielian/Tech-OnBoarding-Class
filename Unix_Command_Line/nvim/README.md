@@ -38,3 +38,14 @@ endsnippet
 Press `cntl-j` to move to the next number (starting with `$1`)
 
 Save, open a new window with nvim and try it out : )
+
+
+## File Type Specific
+
+if you want to make your new plugin work only for say python, then create a new directory called `python` in your `UltiSnips` folder:
+
+1. `mkdir -p ~/.config/nvim/UltiSnips/python` - this creates a location for you to place python snippets (note, directory needs to be named `python`)
+
+Any snippets you create in this folder will only apply to files with python extensions. Same technique for "c" "javascript" or other languages : )
+
+
