@@ -1,0 +1,37 @@
+# Opinionated nvim Setup
+
+NVIM can be scripted in python, big plus.
+
+Also IMHO setup with UltiSnips was much more straightforward.
+
+
+## Prereqs and Setup Recipe:
+
+Things to setup separately (will have docs in subfolders later for additional setup instructions)
+
+1. [vim-plug](https://github.com/junegunn/vim-plug) - plugin manager, install this first
+2. [my-init.vim](my-init.vim) - starter point mainly from junegunn for initialization (vimrc for nvim)
+3. `:PlugInstall` -- use this command to initialize the installation of init files
+4. `mkdir -p ~/.config/nvim/UltiSnips/all` - this creates a location for you to place generic snippets (note, directory needs to be named `all`)
+5. add `let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips/', 'UltiSnips']` to your `~/.config/nvim/init.vim` you can skip this step if you copy pasta'd my init.vim sample : )
+
+
+## get started snippeting
+
+Create a `test.snippets` file in your all directory (will apply to all files)
+
+`nvim ~/.config/nvim/UltiSnips/all/test.snippets`
+
+add the following (hint: you can `usnip` then press `tab` to generate the snippets template)
+
+```
+snippet justa "optional (recommended) description"
+
+test of ${1:the_system}
+
+endsnippet
+
+```
+
+
+Save, open a new window with nvim and try it out : )
