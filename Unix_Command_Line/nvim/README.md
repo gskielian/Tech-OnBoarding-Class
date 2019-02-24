@@ -49,3 +49,8 @@ if you want to make your new plugin work only for say python, then create a new 
 Any snippets you create in this folder will only apply to files with python extensions. Same technique for "c" "javascript" or other languages : )
 
 
+## git commits
+
+To make nvim your default editor for git commits just use the following: 
+
+`git config --global core.editor nvim`
