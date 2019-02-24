@@ -10,7 +10,7 @@ Also IMHO setup with UltiSnips was much more straightforward.
 Things to setup separately (will have docs in subfolders later for additional setup instructions)
 
 1. [vim-plug](https://github.com/junegunn/vim-plug) - plugin manager, install this first
-2. [my-init.vim](my-init.vim) - starter point mainly from junegunn for initialization (vimrc for nvim)
+2. [my-init.vim](my-init.vim) - starter point (mainly the template from junegunn) for initialization (vimrc for nvim)
 3. `:PlugInstall` -- use this command to initialize the installation of init files
 4. `mkdir -p ~/.config/nvim/UltiSnips/all` - this creates a location for you to place generic snippets (note, directory needs to be named `all`)
 5. add `let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips/', 'UltiSnips']` to your `~/.config/nvim/init.vim` you can skip this step if you copy pasta'd my init.vim sample : )
@@ -27,11 +27,14 @@ add the following (hint: you can `usnip` then press `tab` to generate the snippe
 ```
 snippet justa "optional (recommended) description"
 
-test of ${1:the_system}
+test of ${1:the_system} for some ${2:stuff}
+$0
 
 endsnippet
 
 ```
 
+
+Press `cntl-j` to move to the next number (starting with `$1`)
 
 Save, open a new window with nvim and try it out : )
