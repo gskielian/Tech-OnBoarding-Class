@@ -7,3 +7,5 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y kicad
 
+sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+
