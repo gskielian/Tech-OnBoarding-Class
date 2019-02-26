@@ -4,6 +4,9 @@ Introductory Materials for Getting Started with HW/FW/SW
 ## Todo
 
 - [x] Unix Command Line
+- [x] vim
+- [x] nvim
+- [x] emacs
 - [ ] Firmware - STMicro
 - [ ] Firmware - Nordic
 - [ ] Firmware - PIC
