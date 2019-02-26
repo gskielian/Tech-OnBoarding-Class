@@ -1,7 +1,7 @@
 #!/bin/bash
 
-pip install --upgrade pip --user
-pip install -q pyyaml --user
+pip3 install --upgrade pip --user
+pip3 install -q pyyaml --user
 
 
 # ubuntu install
