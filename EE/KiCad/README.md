@@ -3,8 +3,11 @@
 
 ## Install
 
-to install use the setup.sh script
+to install use the setup.sh script:
 
+`./setup.sh`
+
+This setup may take a while due to the size of KiCad.
 
 ### Troubleshooting
 
