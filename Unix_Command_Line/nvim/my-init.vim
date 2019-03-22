@@ -1,5 +1,11 @@
 let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips/', 'UltiSnips']
 
+
+" workaround for nvim git gutter onload glitch (w/o this must press cntl-c
+" after starting nvim to load screen
+let g:gitgutter_enabled = 0
+au VimEnter * :GitGutterEnable
+
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
@@ -32,10 +38,16 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-" Unmanaged plugin (manually installed and updated)
-Plug '~/my-prototype-plugin'
+" surround
+
+Plug 'tpope/vim-surround'
+
+" gitrelated
+
+
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 
 " Initialize plugin system
 call plug#end()
-
