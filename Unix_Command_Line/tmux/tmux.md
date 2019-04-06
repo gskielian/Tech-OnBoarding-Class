@@ -50,3 +50,8 @@ subpanels divide windows, are very useful and look very cool
 `c-d` close panel
 `c-b z` full screen or un-full screen current subpanel
 
+
+## Layout actions
+
+
+`c-b space` switch to next layout (e.g. horizontal <-> vertical of panes)
