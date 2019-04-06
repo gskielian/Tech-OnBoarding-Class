@@ -42,8 +42,10 @@ to detach from the session and leave tmux
 
 subpanels divide windows, are very useful and look very cool
 
-`c-b "` create horizontal split =
-`c-b %` create vertical split ||
+`c-b "` create horizontal split 
+`c-b %` create vertical split
+`c-b ;` go to last pane
+`c-b o` go to next pane
 `c-b <direction` switch to sub-panel in `<direction>`
 `c-d` close panel
 `c-b z` full screen or un-full screen current subpanel
