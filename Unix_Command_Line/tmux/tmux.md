@@ -50,8 +50,12 @@ subpanels divide windows, are very useful and look very cool
 `c-d` close panel
 `c-b z` full screen or un-full screen current subpanel
 
+## Session Naming
+
+`c-b $` rename current session
+`tmux new -S <session-name>` create new session of name `<session-name>`
+
 
 ## Layout actions
-
 
 `c-b space` switch to next layout (e.g. horizontal <-> vertical of panes)
