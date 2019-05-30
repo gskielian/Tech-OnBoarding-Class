@@ -7,3 +7,4 @@ sudo apt-get install libhdf5-dev -y
 sudo apt-get update -y
 sudo apt-get install libhdf5-serial-dev -y
 
+pip3 install h5py --no-cache-dir
