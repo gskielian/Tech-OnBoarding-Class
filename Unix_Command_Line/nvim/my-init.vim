@@ -1,9 +1,14 @@
 let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips/', 'UltiSnips']
 
 
+" looks upward for tags
+set tags=./tags,tags;
+
+
 " workaround for nvim git gutter onload glitch (w/o this must press cntl-c
 " after starting nvim to load screen
 let g:gitgutter_enabled = 0
+let g:rainbow_active = 1
 au VimEnter * :GitGutterEnable
 
 " Specify a directory for plugins
@@ -42,12 +47,19 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'tpope/vim-surround'
 
+" tmux persistance of vim sessions
+Plug 'tpope/vim-obsession'
+Plug 'craigemery/vim-autotag'
+
 " gitrelated
 
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
+" Lisp?
+Plug 'jpalardy/vim-slime'
+Plug 'luochen1990/rainbow'
 
 " Initialize plugin system
 call plug#end()
