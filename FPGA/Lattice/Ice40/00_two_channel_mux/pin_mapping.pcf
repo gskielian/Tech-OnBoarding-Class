@@ -1,0 +1,4 @@
+set_io input_channel_1 99
+set_io input_channel_2 98
+set_io selection_input 97
+set_io mux_out 96
