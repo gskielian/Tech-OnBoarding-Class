@@ -11,7 +11,6 @@ module simple_inverter
 
 	// Define Port(s)
 	input input_1;
-
 	output output_1;
 
 	// Define Connection(s)
