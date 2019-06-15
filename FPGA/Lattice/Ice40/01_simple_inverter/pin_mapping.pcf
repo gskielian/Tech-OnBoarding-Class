@@ -1,0 +1,9 @@
+#Some handy mappings:
+#set_io led_1 99
+#set_io led_2 98
+#set_io led_3 97
+#set_io led_4 96
+#set_io led_5 95
+#set_io clock 21
+set_io input_1 62
+set_io output_1 95
