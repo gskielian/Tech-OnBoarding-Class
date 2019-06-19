@@ -18,10 +18,12 @@ sudo chown root:root: nvim
 sudo mv nvim /usr/bin
 
 mkdir -p ~/.config/nvim
-cp ./my-rpi-init.vim ~/.config/nvim/init.vim
+cp ../my-rpi-init.vim ~/.config/nvim/init.vim
 
 # vimplug setup
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+pip3 install neovim
 
 echo "next open nvim and type :PlugInstall to install plugins"
