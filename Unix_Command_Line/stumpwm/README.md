@@ -24,3 +24,14 @@ Movements commonly used:
 `C-t R` -- removes a split from a frame
 `C-t S` -- splits vertically
 `C-t s` -- splits horizontally
+`C-t <space>` -- cycles through windows in frame
+`C-t t` -- switches between last window in frame and back
+
+## groups
+
+
+`C-t g c` -- create a new group
+`C-t g o` -- goes to last group accessed
+`C-t g <space>` -- goes to next group in list
+`C-t g k` -- kill current group
+`C-t g r` -- rename current group
