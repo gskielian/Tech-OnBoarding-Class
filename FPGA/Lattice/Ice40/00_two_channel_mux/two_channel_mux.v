@@ -7,7 +7,7 @@
 
 module two_channel_mux
    (
-      // List Mux Channels
+      // List Mux Input Channels
       input_channel_1,
       input_channel_2,
 
