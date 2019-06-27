@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt-get install rpi.gpio
+sudo apt-get install -y rpi.gpio
