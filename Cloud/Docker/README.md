@@ -58,7 +58,7 @@ if you'd like to include usb support for your image (to use usb while shelled in
 sudo docker images
 ```
 
-you might for exapmle see the following:
+you might for example see the following:
 
 ```sh
 REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE
@@ -87,7 +87,9 @@ notice we really didn't need to use that many characters (in the above example, 
 
 after making a change to an image, use the following simple line to commit the change, best practice is to include a repo name and tag for reference.
 
+```sh
 sudo docker commit -m "<commit-message>"  [REPOSITORY[:TAG]]
+```
 
 your docker image must be running (it seems correct me if wrong):
 
@@ -112,7 +114,7 @@ sudo docker run -t -i <image-id> bash
 
 ...make some changes...
 
-Now you want to commit the changes, first find the container id with the following:
+Now you want to commit the changes, keep your docker process open, in a new terminal or tmux-pane find the container id with the following:
 
 ```sh
 sudo docker ps
