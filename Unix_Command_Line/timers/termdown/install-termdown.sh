@@ -1,3 +1,3 @@
 #!/bin/bash
 
-pip install termdown
+pip install termdown --user
