@@ -1,3 +1,3 @@
 #!/bin/bash
 
-source /home/kauna/.cargo/env
+source /home/"$USER"/.cargo/env
