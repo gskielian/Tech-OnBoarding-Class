@@ -4,6 +4,11 @@ the following are example scripts from the documentation
 
 [link to kmkeen's documentation](http://kmkeen.com/rtl-power/)
 
+
+### Data format for csv outputs
+
+`date, time, Hz low, Hz high, Hz step, samples, dB, dB, dB, ...`
+
 ### scripts
 
 
