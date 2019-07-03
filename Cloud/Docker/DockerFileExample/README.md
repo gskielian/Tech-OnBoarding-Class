@@ -1,7 +1,7 @@
 # Intro to Dockerfiles
 
 
-sudo docker build -t <dockerfilename> .
+sudo docker build -t <newimagename> .
 
 sudo docker build --tag=justsayinghi:v0.1 .
 
