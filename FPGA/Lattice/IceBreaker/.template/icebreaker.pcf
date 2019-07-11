@@ -1,3 +1,6 @@
+# 12 MHz clock
+set_io -nowarn CLK        35
+
 # Buttons
 set_io -nowarn BTN_U      10 #user uttong near usb micro conn
 set_io -nowarn BTN1       20
