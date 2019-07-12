@@ -8,5 +8,5 @@ fi
 
 image_name="$1"
 
-docker run -t -i --privileged -v /dev/bus/usb:/dev/bus/usb "$image_name" bash
+docker run -t -i --privileged -v /dev/bus/usb:/dev/bus/usb "$image_name" bash --dns
 
