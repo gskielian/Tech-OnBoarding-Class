@@ -1,3 +1,14 @@
 snippet justa "simple example snippet" b
 test of ${1:UltiSnips}
 endsnippet
+
+
+snippet multiline_snippet "example of multiline snippet" b
+this is it in lowercase ${1:text}
+this is the same word in uppercase `!p snip.rv = t[1].upper()`, <- that's uppercase
+this is how to add an extension: `!p snip.rv = t[1].upper()`.py
+endsnippet
+
+snippet date_snip_example "example of cli utils in snippet" b
+Today's date is: `date +%F`.
+endsnippet
