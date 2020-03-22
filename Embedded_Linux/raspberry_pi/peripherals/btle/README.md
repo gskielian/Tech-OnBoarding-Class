@@ -1,5 +1,7 @@
 # Bluetooth LE  with Raspi
 
+Note, python examples are specifically with the HC10 bluetooth le 4.0 module.
+
 
 ## installation 
 
