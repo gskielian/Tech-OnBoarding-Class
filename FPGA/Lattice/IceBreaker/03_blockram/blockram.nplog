@@ -1,4 +1,0 @@
-Warning: Use of default value for --package is deprecated. Please add '--package sg48' to arguments.
-ERROR: IO 'clk' is unconstrained in PCF (override this error with --pcf-allow-unconstrained)
-ERROR: Loading PCF failed.
-1 warning, 2 errors
