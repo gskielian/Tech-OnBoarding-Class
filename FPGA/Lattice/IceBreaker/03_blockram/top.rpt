@@ -1,0 +1,38 @@
+
+icetime topological timing analysis report
+==========================================
+
+Info: max_span_hack is enabled: estimate is conservative.
+
+Report for critical path:
+-------------------------
+
+        pre_io_21_0_1 (PRE_IO) [clk] -> DIN0: 1.105 ns
+     1.105 ns net_79049 (BTN2$SB_IO_IN)
+        odrv_21_0_79049_79105 (Odrv4) I -> O: 0.649 ns
+        t183 (Span4Mux_v4) I -> O: 0.649 ns
+        t182 (Span4Mux_v4) I -> O: 0.649 ns
+        t181 (Span4Mux_v4) I -> O: 0.649 ns
+        t180 (Span4Mux_v4) I -> O: 0.649 ns
+        t179 (Span4Mux_v4) I -> O: 0.649 ns
+        t178 (Span4Mux_h4) I -> O: 0.543 ns
+        t177 (LocalMux) I -> O: 1.099 ns
+        inmux_18_24_74809_74843 (InMux) I -> O: 0.662 ns
+        lc40_18_24_1 (LogicCell40) in1 -> lcout: 1.232 ns
+     8.535 ns net_70932 (BTN2_SB_LUT4_I3_O)
+        odrv_18_24_70932_71075 (Odrv4) I -> O: 0.649 ns
+        t83 (Span4Mux_v4) I -> O: 0.649 ns
+        t82 (LocalMux) I -> O: 1.099 ns
+        inmux_17_25_71113_71174 (CEMux) I -> O: 0.702 ns
+    11.635 ns net_71174 (BTN2_SB_LUT4_I3_O)
+        lc40_17_25_1 (LogicCell40) ce [setup]: 0.000 ns
+    11.635 ns net_67224 (last_read_register[2])
+
+Resolvable net names on path:
+     1.105 ns ..  7.304 ns BTN2$SB_IO_IN
+     8.535 ns .. 11.635 ns BTN2_SB_LUT4_I3_O
+                  lcout -> last_read_register[2]
+
+Total number of logic levels: 2
+Total path delay: 11.63 ns (85.95 MHz)
+
