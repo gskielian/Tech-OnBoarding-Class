@@ -23,10 +23,13 @@ endfunction
 " note: statusline will track variables in real time
 set statusline=                             " reset status bar
 set statusline+=[%n]                        " vim buffer number
-set statusline+=\
+set statusline+=\   
 set statusline+=<APM
-set statusline+=%2{float2nr(g:hello_apm)}>  " actions per minute
+set statusline+=\   
+set statusline+=%{float2nr(g:hello_apm)}>  " actions per minute
+set statusline+=\   
 set statusline+=%20f                        " current file
+set statusline+=\  
 set statusline+=%10{Formatted_Git_Branch()} " branch
 set statusline+=%=                          " move to right side
 set statusline+=%=%1*%y%*%*\                " file type
