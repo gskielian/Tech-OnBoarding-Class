@@ -1,9 +1,9 @@
-PROJ = blockram
+PROJ = top
 
 all: $(PROJ).rpt $(PROJ).bin
 
 $(PROJ).json: $(PROJ).v
-	yosys -ql $(PROJ).yslog -p 'synth_ice40 -top blockram -json $@' $<
+	yosys -ql $(PROJ).yslog -p 'synth_ice40 -top top -json $@' $<
 
 $(PROJ).asc: $(PROJ).json icebreaker.pcf
 	nextpnr-ice40 -ql $(PROJ).nplog --up5k --freq 12 --asc $@ --pcf icebreaker.pcf --json $<
