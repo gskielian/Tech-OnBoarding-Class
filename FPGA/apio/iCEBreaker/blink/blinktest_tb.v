@@ -1,7 +1,7 @@
 `timescale 1us/1ns
-module tb ();
+module blinktest_tb ();
   initial begin
-    $dumpfile("top_tb.vcd");
+    $dumpfile("blinktest_tb.vcd");
     $dumpvars(0, t);
   end
 
@@ -27,7 +27,7 @@ module tb ();
 
   initial begin
 		clk = 1'b0;
-	end
+  end
 
   always begin
 	  // number of microseconds before switch
@@ -37,7 +37,7 @@ module tb ();
   initial begin
     repeat(10000) @(posedge clk);
 
-$display("Test completed");
+    $display("Test completed");
     $finish;
   end
 
