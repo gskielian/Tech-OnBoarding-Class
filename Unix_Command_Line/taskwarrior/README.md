@@ -20,3 +20,10 @@ taskwarrior is a cli task management tool, taking notes on it's usage below:
 ## durations ##
 
 [list of legal recurrance durations](https://taskwarrior.org/docs/durations.html)
+
+## linking with timewarrior ##
+
+copy the `on-modify.timewarrior` file to the `~/.task/hooks/` directory
+then `chmod +x on-modify.timewarrior` and run `task diagnostics` to check that it is active
+
+
