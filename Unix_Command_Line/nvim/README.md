@@ -54,3 +54,8 @@ Any snippets you create in this folder will only apply to files with python exte
 To make nvim your default editor for git commits just use the following: 
 
 `git config --global core.editor nvim`
+
+## How to setup Code Completion
+
+
+[Code Completion Guide](https://octetz.com/docs/2019/2019-04-24-vim-as-a-go-ide/)
