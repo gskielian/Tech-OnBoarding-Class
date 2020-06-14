@@ -178,3 +178,9 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
 let g:go_def_mapping_enabled = 0
 
+
+"comment to go back to hex of character underneath
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
