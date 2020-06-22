@@ -55,7 +55,17 @@ To make nvim your default editor for git commits just use the following:
 
 `git config --global core.editor nvim`
 
+
+## vim init descriptions
+
+- `detailed-init.vim` - has fzf, nerdtree, and tagbar toggle
+- `modern-init.vim` - without above, but with go bindings
+- `my-init.vim` - even more barebones
+- `my-rpi-init.vim` - raspi targeted
 ## How to setup Code Completion
 
 
 [Code Completion Guide](https://octetz.com/docs/2019/2019-04-24-vim-as-a-go-ide/)
+
+
+
