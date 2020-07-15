@@ -10,5 +10,3 @@ main = do
 	print(set_of_sentence_2)
 
 
-
-

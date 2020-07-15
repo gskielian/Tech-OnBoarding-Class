@@ -5,21 +5,21 @@
 - `ghc 01_hello_world.hs` - runs a haskell program
 
 
-## Run withouth compiling
+## Run without compiling
 
-- `runhaskell 00_hello_world.hs` - o
+- `runhaskell 00_hello_world.hs`
 
 ## REPL
 
-- `ghci` - opens a 
+- `ghci` - opens a REPL
 
 ## linting
 
-- `hlint <filename>` - description
+- `hlint <filename>` - formatting hints
 
 ## Custom Modules
 
-1. create a module starting with a captial letter, and of the same name as the contained module, underscores are allowed as well
+1. create a module starting with a capital letter, and of the same name as the contained module, underscores are allowed as well
 
 # References and Further Reading
 
