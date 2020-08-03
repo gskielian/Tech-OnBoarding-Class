@@ -7,7 +7,7 @@ module buttons(
 	output LED1,
 	output LED2,
 	output LED3,
-	output LED5
+	output LED4
 );
 
 // higher means higher debounce hurdle (less prone to errors), but lower responsiveness
@@ -15,7 +15,7 @@ module buttons(
 // use 18 for much faster responsiveness
 // could be interesting to setup a long press and short press action
 // eventually on the same button...
-localparam N = 18; 
+localparam N = 22; 
 
 // counter register for debounce timeout
 // 4 arrays 20 bits each
@@ -25,7 +25,7 @@ reg [N:0] counter [3:0];
 reg [3:0] b_hold_init = 'b0000;
 reg [3:0] b_hold = 'b0000;
 
-reg [3:0] b_output_state;
+reg [3:0] b_output_state = 'b0000;
 
 // separate by first clock cycle to prevent metastability
 // also flip b/c inputs have pullup resistors (press makes it low)
@@ -40,7 +40,7 @@ integer i;
 always @(posedge CLK) begin
 	for (i = 0; i <= 3; i = i + 1) begin 
 		if (b_hold[i] != b_output_state[i]) begin
-			if (counter[i] != 'b1111_1111_1111_1111_1111_1111) begin
+			if (counter[i] != {N{1'b1}}) begin
 				counter[i] <= counter[i] + 1;
 			end
 			else begin
@@ -55,6 +55,6 @@ always @(posedge CLK) begin
 end
 
 /* assign {LED1, LED2, LED3, LED4} = b_output_state[3:0]; */
-assign {LED1, LED2, LED3, LED5} = b_output_state[3:0];
+assign {LED1, LED2, LED3, LED4} = b_output_state[3:0];
 
 endmodule
