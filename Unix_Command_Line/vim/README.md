@@ -87,6 +87,12 @@
 `v` and moving the cursor to create a region
 `shift-v` move cursor to create region (highlights whole lines)
 
+# insert mode special moves
+
+`c-w` delete last word
+`c-o` do one action in normal mode, then pop back into insert mode
+`c-r` insert from a specific register (`"` is your default, `+` is system clipboard)
+
 # quitting
 
 `:wq` save and quit (aka write and quit)
