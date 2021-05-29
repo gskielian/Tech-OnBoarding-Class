@@ -1,0 +1,278 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+$(PROJ).asc	03_blockram/Makefile	/^$(PROJ).asc: $(PROJ).json icebreaker.pcf$/;"	t
+$(PROJ).bin	03_blockram/Makefile	/^$(PROJ).bin: $(PROJ).asc$/;"	t
+$(PROJ).json	03_blockram/Makefile	/^$(PROJ).json: $(PROJ).v$/;"	t
+$(PROJ).rpt	03_blockram/Makefile	/^$(PROJ).rpt: $(PROJ).asc$/;"	t
+$(PROJ)_syn.v	03_blockram/Makefile	/^$(PROJ)_syn.v: $(PROJ).json$/;"	t
+$(PROJ)_syntb	03_blockram/Makefile	/^$(PROJ)_syntb: $(PROJ)_tb.v $(PROJ)_syn.v$/;"	t
+$(PROJ)_syntb.vcd	03_blockram/Makefile	/^$(PROJ)_syntb.vcd: $(PROJ)_syntb$/;"	t
+$(PROJ)_tb	03_blockram/Makefile	/^$(PROJ)_tb: $(PROJ)_tb.v $(PROJ).v$/;"	t
+$(PROJ)_tb.vcd	03_blockram/Makefile	/^$(PROJ)_tb.vcd: $(PROJ)_tb$/;"	t
+BTN1	03_blockram/top.v	/^	input BTN1,$/;"	p	module:top
+BTN2	03_blockram/top.v	/^	input BTN2,$/;"	p	module:top
+BTN3	03_blockram/top.v	/^	input BTN3,$/;"	p	module:top
+BTN_U	03_blockram/top.v	/^	input BTN_U,$/;"	p	module:top
+CLK	03_blockram/top.v	/^	input CLK,$/;"	p	module:top
+CLK	FIR_Filter/blink.v	/^	input CLK,$/;"	p	module:blink_test
+CLK	blink/blink.v	/^	input CLK,$/;"	p	module:blink_test
+CLK	blockram_example/vga_solid_color.v	/^	input CLK,$/;"	p	module:vga_solid_color
+CLK	blockram_example/vga_timing_mod.v	/^	input wire CLK,$/;"	p	module:vga_timing_mod
+CLK	thin_buttons/blink.v	/^	input CLK,$/;"	p	module:buttons
+CLK	thin_buttons/buttons.v	/^	input CLK,$/;"	p	module:buttons
+CLK	thin_buttons/debounce.v	/^	input CLK,$/;"	p	module:buttons
+CLK	vga_solid_color/vga_mod.v	/^	input CLK,$/;"	p	module:vga_mod
+CLK	vga_solid_color/vga_solid_color.v	/^	input CLK,$/;"	p	module:vga_solid_color
+D_HS_END	blockram_example/vga_timing_mod.v	/^localparam D_HS_END =  H_VISIBLE_AREA + H_FRONT_PORCH + H_SYNC_PULSE;$/;"	c	module:vga_timing_mod
+D_HS_END	vga_solid_color/vga_mod.v	/^localparam D_HS_END =  H_VISIBLE_AREA + H_FRONT_PORCH + H_SYNC_PULSE;$/;"	c	module:vga_mod
+D_HS_START	blockram_example/vga_timing_mod.v	/^localparam D_HS_START = H_VISIBLE_AREA + H_FRONT_PORCH;$/;"	c	module:vga_timing_mod
+D_HS_START	vga_solid_color/vga_mod.v	/^localparam D_HS_START = H_VISIBLE_AREA + H_FRONT_PORCH;$/;"	c	module:vga_mod
+D_VISIBLE_HEIGHT_HALF	blockram_example/vga_timing_mod.v	/^localparam D_VISIBLE_HEIGHT_HALF = O_ACTIVE_LINES\/2; \/\/really v_visible_area\/h_wholeline$/;"	c	module:vga_timing_mod
+D_VISIBLE_HEIGHT_HALF	vga_solid_color/vga_mod.v	/^localparam D_VISIBLE_HEIGHT_HALF = O_ACTIVE_LINES\/2; \/\/really v_visible_area\/h_wholeline$/;"	c	module:vga_mod
+D_VISIBLE_WIDTH_HALF	blockram_example/vga_timing_mod.v	/^localparam D_VISIBLE_WIDTH_HALF = H_VISIBLE_AREA\/2; \/\/really v_visible_area\/h_wholeline$/;"	c	module:vga_timing_mod
+D_VISIBLE_WIDTH_HALF	vga_solid_color/vga_mod.v	/^localparam D_VISIBLE_WIDTH_HALF = H_VISIBLE_AREA\/2; \/\/really v_visible_area\/h_wholeline$/;"	c	module:vga_mod
+D_VS_END	blockram_example/vga_timing_mod.v	/^localparam D_VS_END = 480 + 10 + 2;$/;"	c	module:vga_timing_mod
+D_VS_END	vga_solid_color/vga_mod.v	/^localparam D_VS_END = 480 + 10 + 2;$/;"	c	module:vga_mod
+D_VS_START	blockram_example/vga_timing_mod.v	/^localparam D_VS_START = 480 + 10;$/;"	c	module:vga_timing_mod
+D_VS_START	vga_solid_color/vga_mod.v	/^localparam D_VS_START = 480 + 10;$/;"	c	module:vga_mod
+Description	blockram_example/README.md	/^## Description ##$/;"	s
+H_BACK_PORCH	blockram_example/vga_timing_mod.v	/^localparam H_BACK_PORCH   = 23; \/\/really   22.88$/;"	c	module:vga_timing_mod
+H_BACK_PORCH	vga_solid_color/vga_mod.v	/^localparam H_BACK_PORCH = 23; \/\/really   22.88$/;"	c	module:vga_mod
+H_FRONT_PORCH	blockram_example/vga_timing_mod.v	/^localparam H_FRONT_PORCH  = 10; \/\/really    7.62 NOTE choosing 7 instead of 8 works much bette/;"	c	module:vga_timing_mod
+H_FRONT_PORCH	vga_solid_color/vga_mod.v	/^localparam H_FRONT_PORCH = 7; \/\/really    7.62 NOTE choosing 7 instead of 8 works much better /;"	c	module:vga_mod
+H_SYNC_PULSE	blockram_example/vga_timing_mod.v	/^localparam H_SYNC_PULSE   = 46; \/\/really   45.76$/;"	c	module:vga_timing_mod
+H_SYNC_PULSE	vga_solid_color/vga_mod.v	/^localparam H_SYNC_PULSE = 46; \/\/really   45.76$/;"	c	module:vga_mod
+H_TIMER_BITS	blockram_example/vga_solid_color.v	/^localparam H_TIMER_BITS = 9; \/\/math.log(31.7775571e-6\/(1\/12e6),2) = 8.575$/;"	c	module:vga_solid_color
+H_TIMER_BITS	blockram_example/vga_timing_mod.v	/^	parameter H_TIMER_BITS = 9$/;"	c	module:vga_timing_mod
+H_TIMER_BITS	vga_solid_color/vga_mod.v	/^localparam H_TIMER_BITS = 9; \/\/math.log(31.7775571e-6\/(1\/12e6),2) = 8.575$/;"	c	module:vga_mod
+H_VISIBLE_AREA	blockram_example/vga_timing_mod.v	/^localparam H_VISIBLE_AREA = 305; \/\/instead of 640, a fundamental limitation of the 12MHz clock$/;"	c	module:vga_timing_mod
+H_VISIBLE_AREA	vga_solid_color/vga_mod.v	/^localparam H_VISIBLE_AREA = 305; \/\/instead of 640, a fundamental limitation of the 12MHz clock$/;"	c	module:vga_mod
+H_WHOLE_LINE	blockram_example/vga_timing_mod.v	/^localparam H_WHOLE_LINE   = 381; \/\/really 381.33$/;"	c	module:vga_timing_mod
+H_WHOLE_LINE	vga_solid_color/vga_mod.v	/^localparam H_WHOLE_LINE = 381; \/\/really 381.33$/;"	c	module:vga_mod
+LED1	03_blockram/top.v	/^	output LED1,$/;"	p	module:top
+LED1	FIR_Filter/blink.v	/^	output LED1,$/;"	p	module:blink_test
+LED1	blink/blink.v	/^	output LED1,$/;"	p	module:blink_test
+LED1	thin_buttons/blink.v	/^	output LED1,$/;"	p	module:buttons
+LED1	thin_buttons/buttons.v	/^	output LED1,$/;"	p	module:buttons
+LED1	thin_buttons/debounce.v	/^	output LED1,$/;"	p	module:buttons
+LED2	03_blockram/top.v	/^	output LED2,$/;"	p	module:top
+LED2	FIR_Filter/blink.v	/^	output LED2,$/;"	p	module:blink_test
+LED2	blink/blink.v	/^	output LED2,$/;"	p	module:blink_test
+LED2	thin_buttons/blink.v	/^	output LED2,$/;"	p	module:buttons
+LED2	thin_buttons/buttons.v	/^	output LED2,$/;"	p	module:buttons
+LED2	thin_buttons/debounce.v	/^	output LED2,$/;"	p	module:buttons
+LED3	03_blockram/top.v	/^	output LED3,$/;"	p	module:top
+LED3	FIR_Filter/blink.v	/^	output LED3,$/;"	p	module:blink_test
+LED3	blink/blink.v	/^	output LED3,$/;"	p	module:blink_test
+LED3	thin_buttons/blink.v	/^	output LED3,$/;"	p	module:buttons
+LED3	thin_buttons/buttons.v	/^	output LED3,$/;"	p	module:buttons
+LED3	thin_buttons/debounce.v	/^	output LED3,$/;"	p	module:buttons
+LED4	03_blockram/top.v	/^	output LED4,$/;"	p	module:top
+LED4	FIR_Filter/blink.v	/^	output LED4,$/;"	p	module:blink_test
+LED4	blink/blink.v	/^	output LED4$/;"	p	module:blink_test
+LED4	thin_buttons/blink.v	/^	output LED4,$/;"	p	module:buttons
+LED4	thin_buttons/buttons.v	/^	output LED4$/;"	p	module:buttons
+LED4	thin_buttons/debounce.v	/^	output LED4,$/;"	p	module:buttons
+LED5	03_blockram/top.v	/^	output LED5);$/;"	p	module:top
+LED5	FIR_Filter/blink.v	/^	output LED5$/;"	p	module:blink_test
+LEDG_N	FIR_Filter/blink.v	/^	output LEDG_N,$/;"	p	module:blink_test
+LEDR_N	FIR_Filter/blink.v	/^	output LEDR_N,$/;"	p	module:blink_test
+N	FIR_Filter/blink.v	/^localparam N = 24; $/;"	c	module:blink_test
+N	blink/blink.v	/^localparam N = 24;  \/\/-- N<=21 Fast, N>=23 Slow$/;"	c	module:blink_test
+N	thin_buttons/blink.v	/^localparam N = 24;  \/\/-- N<=21 Fast, N>=23 Slow$/;"	c	module:buttons
+N	thin_buttons/button_test_tb.v	/^  localparam N = 24;$/;"	c	module:button_test_tb
+N	thin_buttons/buttons.v	/^localparam N = 22; $/;"	c	module:buttons
+N	thin_buttons/debounce.v	/^localparam N = 20; $/;"	c	module:buttons
+Notes	blockram_example/README.md	/^## Notes ##$/;"	s
+O_ACTIVE_LINES	blockram_example/vga_timing_mod.v	/^localparam O_ACTIVE_LINES = 480;$/;"	c	module:vga_timing_mod
+O_ACTIVE_LINES	vga_solid_color/vga_mod.v	/^localparam O_ACTIVE_LINES = 480;$/;"	c	module:vga_mod
+O_SCREEN	blockram_example/vga_timing_mod.v	/^localparam O_SCREEN = 525;$/;"	c	module:vga_timing_mod
+O_SCREEN	vga_solid_color/vga_mod.v	/^localparam O_SCREEN = 525;$/;"	c	module:vga_mod
+P1A10	thin_buttons/blink.v	/^	output P1A10$/;"	p	module:buttons
+P1A10	thin_buttons/buttons.v	/^	input P1A10,$/;"	p	module:buttons
+P1A10	thin_buttons/debounce.v	/^	input P1A10,$/;"	p	module:buttons
+P1A3	blockram_example/vga_solid_color.v	/^	output P1A3,$/;"	p	module:vga_solid_color
+P1A3	vga_solid_color/vga_solid_color.v	/^	output P1A3,$/;"	p	module:vga_solid_color
+P1A4	blockram_example/vga_solid_color.v	/^	output P1A4,$/;"	p	module:vga_solid_color
+P1A4	vga_solid_color/vga_solid_color.v	/^	output P1A4,$/;"	p	module:vga_solid_color
+P1A7	blockram_example/vga_solid_color.v	/^	output wire P1A7,$/;"	p	module:vga_solid_color
+P1A7	thin_buttons/blink.v	/^	output P1A7,$/;"	p	module:buttons
+P1A7	thin_buttons/buttons.v	/^	input P1A7,$/;"	p	module:buttons
+P1A7	thin_buttons/debounce.v	/^	input P1A7,$/;"	p	module:buttons
+P1A7	vga_solid_color/vga_solid_color.v	/^	output P1A7,$/;"	p	module:vga_solid_color
+P1A8	blockram_example/vga_solid_color.v	/^	output wire P1A8,$/;"	p	module:vga_solid_color
+P1A8	thin_buttons/blink.v	/^	output P1A8,$/;"	p	module:buttons
+P1A8	thin_buttons/buttons.v	/^	input P1A8,$/;"	p	module:buttons
+P1A8	thin_buttons/debounce.v	/^	input P1A8,$/;"	p	module:buttons
+P1A8	vga_solid_color/vga_solid_color.v	/^	output P1A8,$/;"	p	module:vga_solid_color
+P1A9	blockram_example/vga_solid_color.v	/^	output wire P1A9$/;"	p	module:vga_solid_color
+P1A9	thin_buttons/blink.v	/^	output P1A9,$/;"	p	module:buttons
+P1A9	thin_buttons/buttons.v	/^	input P1A9,$/;"	p	module:buttons
+P1A9	thin_buttons/debounce.v	/^	input P1A9,$/;"	p	module:buttons
+P1A9	vga_solid_color/vga_solid_color.v	/^	output P1A9$/;"	p	module:vga_solid_color
+PROJ	03_blockram/Makefile	/^PROJ = top$/;"	m
+VGA Driving with Ice40 UP5K #	blockram_example/README.md	/^# VGA Driving with Ice40 UP5K # $/;"	c
+VGA Driving with Ice40 UP5K #	vga_solid_color/README.md	/^# VGA Driving with Ice40 UP5K # $/;"	c
+V_TIMER_BITS	blockram_example/vga_solid_color.v	/^localparam V_TIMER_BITS = 9;$/;"	c	module:vga_solid_color
+V_TIMER_BITS	blockram_example/vga_timing_mod.v	/^	parameter V_TIMER_BITS = 9,$/;"	c	module:vga_timing_mod
+V_TIMER_BITS	vga_solid_color/vga_mod.v	/^localparam V_TIMER_BITS = 9; \/\/trying new method which counts hlines$/;"	c	module:vga_mod
+all	03_blockram/Makefile	/^all: $(PROJ).rpt $(PROJ).bin$/;"	t
+b_hold	thin_buttons/buttons.v	/^reg [3:0] b_hold = 'b0000;$/;"	r	module:buttons
+b_hold	thin_buttons/debounce.v	/^reg [3:0] b_hold = 'b0000;$/;"	r	module:buttons
+b_hold_init	thin_buttons/buttons.v	/^reg [3:0] b_hold_init = 'b0000;$/;"	r	module:buttons
+b_hold_init	thin_buttons/debounce.v	/^reg [3:0] b_hold_init = 'b0000;$/;"	r	module:buttons
+b_output_state	thin_buttons/buttons.v	/^reg [3:0] b_output_state = 'b0000;$/;"	r	module:buttons
+b_output_state	thin_buttons/debounce.v	/^	output b_output_state$/;"	p	module:buttons
+b_output_state	thin_buttons/debounce.v	/^reg [3:0] b_output_state;$/;"	r	module:buttons
+blink_test	FIR_Filter/blink.v	/^module blink_test ($/;"	m
+blink_test	blink/blink.v	/^module blink_test ($/;"	m
+blinktest_tb	blink/blinktest_tb.v	/^module blinktest_tb ();$/;"	m
+blue	blockram_example/vga_mod_tb.v	/^  wire blue;$/;"	n	module:vga_mod_tb
+blue	vga_solid_color/vga_mod.v	/^	output blue$/;"	p	module:vga_mod
+blue	vga_solid_color/vga_mod.v	/^wire red, green, blue;$/;"	n	module:vga_mod
+blue	vga_solid_color/vga_mod_tb.v	/^  wire blue;$/;"	n	module:vga_mod_tb
+blue_out	blockram_example/vga_colors_mod.v	/^	output wire blue_out,$/;"	p	module:vga_colors_mod
+blue_out	blockram_example/vga_solid_color.v	/^wire blue_out;$/;"	n	module:vga_solid_color
+board	blink/apio.ini	/^board = iCEBreaker$/;"	k	section:env
+board	blockram_example/apio.ini	/^board = iCEBreaker$/;"	k	section:env
+board	vga_solid_color/apio.ini	/^board = iCEBreaker$/;"	k	section:env
+button_test_tb	thin_buttons/blinktest_tb.v	/^module button_test_tb ();$/;"	m
+button_test_tb	thin_buttons/button_test_tb.v	/^module button_test_tb ();$/;"	m
+buttons	thin_buttons/blink.v	/^module buttons($/;"	m
+buttons	thin_buttons/buttons.v	/^module buttons($/;"	m
+buttons	thin_buttons/debounce.v	/^module buttons($/;"	m
+clean	03_blockram/Makefile	/^clean:$/;"	t
+clk	03_blockram/implicit_blockram.v	/^	input wire clk,$/;"	p	module:implicit_blockram
+clk	blink/blinktest_tb.v	/^  reg clk;$/;"	r	module:blinktest_tb
+clk	blockram_example/implicit_blockram.v	/^	input wire clk,$/;"	p	module:implicit_blockram
+clk	blockram_example/vga_mod_tb.v	/^  reg clk;$/;"	r	module:vga_mod_tb
+clk	thin_buttons/blinktest_tb.v	/^	input clk,$/;"	p	module:button_test_tb
+clk	thin_buttons/button_test_tb.v	/^	reg clk;$/;"	r	module:button_test_tb
+clk	vga_solid_color/vga_mod_tb.v	/^  reg clk;$/;"	r	module:vga_mod_tb
+counter	FIR_Filter/blink.v	/^reg [N:0] counter = 0;$/;"	r	module:blink_test
+counter	blink/blink.v	/^reg [N:0] counter = 0;$/;"	r	module:blink_test
+counter	thin_buttons/blink.v	/^reg [N:0] counter = 0;$/;"	r	module:buttons
+counter	thin_buttons/blinktest_tb.v	/^  reg [N:0] counter;$/;"	r	module:button_test_tb
+counter	thin_buttons/button_test_tb.v	/^  reg [N:0] counter;$/;"	r	module:button_test_tb
+counter	thin_buttons/buttons.v	/^reg [N:0] counter [3:0];$/;"	r	module:buttons
+counter	thin_buttons/debounce.v	/^reg [N:0] counter [3:0];$/;"	r	module:buttons
+data_in	03_blockram/implicit_blockram.v	/^	input wire [15:0] data_in,$/;"	p	module:implicit_blockram
+data_in	blockram_example/implicit_blockram.v	/^	input wire [15:0] data_in,$/;"	p	module:implicit_blockram
+data_in	blockram_example/vga_colors_mod.v	/^	input wire [2:0] data_in$/;"	p	module:vga_colors_mod
+data_out	03_blockram/implicit_blockram.v	/^	output reg [15:0] data_out,$/;"	p	module:implicit_blockram
+data_out	blockram_example/implicit_blockram.v	/^	output reg [15:0] data_out,$/;"	p	module:implicit_blockram
+env	blink/apio.ini	/^[env]$/;"	s
+env	blockram_example/apio.ini	/^[env]$/;"	s
+env	vga_solid_color/apio.ini	/^[env]$/;"	s
+f	FIR_Filter/sympy/filter_script.py	/^f = Symbol('f')$/;"	v
+final_result	FIR_Filter/sympy/filter_script.py	/^    final_result = norm_result.evalf(maxn=50).subs(x, val)$/;"	v
+green	blockram_example/vga_mod_tb.v	/^  wire green;$/;"	n	module:vga_mod_tb
+green	vga_solid_color/vga_mod.v	/^	output green,$/;"	p	module:vga_mod
+green	vga_solid_color/vga_mod.v	/^wire red, green, blue;$/;"	n	module:vga_mod
+green	vga_solid_color/vga_mod_tb.v	/^  wire green;$/;"	n	module:vga_mod_tb
+green_out	blockram_example/vga_colors_mod.v	/^	output wire green_out,$/;"	p	module:vga_colors_mod
+green_out	blockram_example/vga_solid_color.v	/^wire green_out;$/;"	n	module:vga_solid_color
+h_counter	blockram_example/vga_solid_color.v	/^wire [H_TIMER_BITS:0] h_counter;$/;"	n	module:vga_solid_color
+h_counter	blockram_example/vga_timing_mod.v	/^	output reg [H_TIMER_BITS:0] h_counter$/;"	p	module:vga_timing_mod
+h_counter	vga_solid_color/vga_mod.v	/^reg [H_TIMER_BITS:0] h_counter = 0;$/;"	r	module:vga_mod
+hsync	blockram_example/vga_mod_tb.v	/^  wire hsync;$/;"	n	module:vga_mod_tb
+hsync	blockram_example/vga_timing_mod.v	/^	output wire hsync,$/;"	p	module:vga_timing_mod
+hsync	vga_solid_color/vga_mod.v	/^	output hsync,$/;"	p	module:vga_mod
+hsync	vga_solid_color/vga_mod_tb.v	/^  wire hsync;$/;"	n	module:vga_mod_tb
+i	03_blockram/implicit_blockram.v	/^   integer i;$/;"	r	module:implicit_blockram
+i	blockram_example/implicit_blockram.v	/^   integer i;$/;"	r	module:implicit_blockram
+i	thin_buttons/buttons.v	/^integer i;$/;"	r	module:buttons
+i	thin_buttons/debounce.v	/^integer i;$/;"	r	module:buttons
+ib_data_in	03_blockram/top.v	/^   reg [15:0] ib_data_in;$/;"	r	module:top
+ib_data_in	blockram_example/vga_solid_color.v	/^reg [15:0] ib_data_in;$/;"	r	module:vga_solid_color
+ib_data_out	03_blockram/top.v	/^   wire [15:0] ib_data_out;$/;"	n	module:top
+ib_data_out	blockram_example/vga_solid_color.v	/^wire [15:0] ib_data_out;$/;"	n	module:vga_solid_color
+ib_r_addr	03_blockram/top.v	/^   reg [7:0] ib_r_addr;$/;"	r	module:top
+ib_r_addr	blockram_example/vga_solid_color.v	/^reg [7:0] ib_r_addr;$/;"	r	module:vga_solid_color
+ib_r_en	03_blockram/top.v	/^   reg ib_r_en;$/;"	r	module:top
+ib_r_en	blockram_example/vga_solid_color.v	/^reg ib_r_en;$/;"	r	module:vga_solid_color
+ib_valid_out	03_blockram/top.v	/^   wire ib_valid_out;$/;"	n	module:top
+ib_valid_out	blockram_example/vga_solid_color.v	/^wire ib_valid_out;$/;"	n	module:vga_solid_color
+ib_w_addr	03_blockram/top.v	/^   reg [7:0] ib_w_addr;$/;"	r	module:top
+ib_w_addr	blockram_example/vga_solid_color.v	/^reg [7:0] ib_w_addr;$/;"	r	module:vga_solid_color
+ib_w_en	03_blockram/top.v	/^   reg ib_w_en;$/;"	r	module:top
+ib_w_en	blockram_example/vga_solid_color.v	/^reg ib_w_en;$/;"	r	module:vga_solid_color
+implicit_blockram	03_blockram/implicit_blockram.v	/^module implicit_blockram($/;"	m
+implicit_blockram	blockram_example/implicit_blockram.v	/^module implicit_blockram($/;"	m
+last_read_register	03_blockram/top.v	/^   reg [7:0] last_read_register;$/;"	r	module:top
+led	03_blockram/top.v	/^   reg [4:0] led;$/;"	r	module:top
+led1	blink/blinktest_tb.v	/^  wire led1;$/;"	n	module:blinktest_tb
+led1	thin_buttons/blinktest_tb.v	/^	output led1,$/;"	p	module:button_test_tb
+led1	thin_buttons/button_test_tb.v	/^	wire  led1;$/;"	n	module:button_test_tb
+led2	blink/blinktest_tb.v	/^  wire led2;$/;"	n	module:blinktest_tb
+led2	thin_buttons/blinktest_tb.v	/^	output led2,$/;"	p	module:button_test_tb
+led2	thin_buttons/button_test_tb.v	/^	wire  led2;$/;"	n	module:button_test_tb
+led3	blink/blinktest_tb.v	/^  wire led3;$/;"	n	module:blinktest_tb
+led3	thin_buttons/blinktest_tb.v	/^	output led3,$/;"	p	module:button_test_tb
+led3	thin_buttons/button_test_tb.v	/^	wire  led3;$/;"	n	module:button_test_tb
+led4	blink/blinktest_tb.v	/^  wire led4;$/;"	n	module:blinktest_tb
+led4	thin_buttons/button_test_tb.v	/^	wire  led4;$/;"	n	module:button_test_tb
+led5	blink/blinktest_tb.v	/^  wire led5;$/;"	n	module:blinktest_tb
+led5	thin_buttons/blinktest_tb.v	/^	output led5$/;"	p	module:button_test_tb
+led6	blink/blinktest_tb.v	/^  wire led6;$/;"	n	module:blinktest_tb
+led7	blink/blinktest_tb.v	/^  wire led7;$/;"	n	module:blinktest_tb
+memory	03_blockram/implicit_blockram.v	/^   reg [15:0] memory [0:255];$/;"	r	module:implicit_blockram
+memory	blockram_example/implicit_blockram.v	/^   reg [15:0] memory [0:255];$/;"	r	module:implicit_blockram
+mpl	FIR_Filter/sympy/filter_script.py	/^import matplotlib.pyplot as mpl$/;"	I
+norm_result	FIR_Filter/sympy/filter_script.py	/^norm_result = result_1\/result_3$/;"	v
+p1a10	thin_buttons/blinktest_tb.v	/^	input p1a10,$/;"	p	module:button_test_tb
+p1a10	thin_buttons/button_test_tb.v	/^	wire p1a10;$/;"	n	module:button_test_tb
+p1a7	thin_buttons/blinktest_tb.v	/^	input p1a7,$/;"	p	module:button_test_tb
+p1a7	thin_buttons/button_test_tb.v	/^	wire p1a7;$/;"	n	module:button_test_tb
+p1a8	thin_buttons/blinktest_tb.v	/^	input p1a8,$/;"	p	module:button_test_tb
+p1a8	thin_buttons/button_test_tb.v	/^	wire p1a8;$/;"	n	module:button_test_tb
+p1a9	thin_buttons/blinktest_tb.v	/^	input p1a9,$/;"	p	module:button_test_tb
+p1a9	thin_buttons/button_test_tb.v	/^	wire p1a9;$/;"	n	module:button_test_tb
+prog	03_blockram/Makefile	/^prog: $(PROJ).bin$/;"	t
+r_addr	03_blockram/implicit_blockram.v	/^	input wire [7:0] r_addr,$/;"	p	module:implicit_blockram
+r_addr	blockram_example/implicit_blockram.v	/^	input wire [7:0] r_addr,$/;"	p	module:implicit_blockram
+r_en	03_blockram/implicit_blockram.v	/^	input wire r_en,$/;"	p	module:implicit_blockram
+r_en	blockram_example/implicit_blockram.v	/^	input wire r_en,$/;"	p	module:implicit_blockram
+red	blockram_example/vga_mod_tb.v	/^  wire red;$/;"	n	module:vga_mod_tb
+red	vga_solid_color/vga_mod.v	/^	output red,$/;"	p	module:vga_mod
+red	vga_solid_color/vga_mod.v	/^wire red, green, blue;$/;"	n	module:vga_mod
+red	vga_solid_color/vga_mod_tb.v	/^  wire red;$/;"	n	module:vga_mod_tb
+red_out	blockram_example/vga_colors_mod.v	/^	output wire red_out,$/;"	p	module:vga_colors_mod
+red_out	blockram_example/vga_solid_color.v	/^wire red_out;$/;"	n	module:vga_solid_color
+result_1	FIR_Filter/sympy/filter_script.py	/^result_1 = integrate(cos(2*pi*f*x),(f,10,4000))$/;"	v
+result_2	FIR_Filter/sympy/filter_script.py	/^result_2 = integrate(cos(2*pi*f*x)*cos(2*pi*f*x),(f,10,4000))$/;"	v
+result_3	FIR_Filter/sympy/filter_script.py	/^result_3 = integrate(result_2, (x, -pi\/10, pi\/10))$/;"	v
+sudo-prog	03_blockram/Makefile	/^sudo-prog: $(PROJ).bin$/;"	t
+top	03_blockram/top.v	/^module top($/;"	m
+v	FIR_Filter/sympy/filter_script.py	/^v = []$/;"	v
+v_counter	blockram_example/vga_solid_color.v	/^wire [V_TIMER_BITS:0] v_counter;$/;"	n	module:vga_solid_color
+v_counter	blockram_example/vga_timing_mod.v	/^	output reg [V_TIMER_BITS:0] v_counter,$/;"	p	module:vga_timing_mod
+v_counter	vga_solid_color/vga_mod.v	/^reg [V_TIMER_BITS:0] v_counter = 0;$/;"	r	module:vga_mod
+val	FIR_Filter/sympy/filter_script.py	/^    val = i\/100000$/;"	v
+valid_out	03_blockram/implicit_blockram.v	/^	output reg valid_out);$/;"	p	module:implicit_blockram
+valid_out	blockram_example/implicit_blockram.v	/^	output reg valid_out);$/;"	p	module:implicit_blockram
+vga_colors_mod	blockram_example/vga_colors_mod.v	/^module vga_colors_mod $/;"	m
+vga_mod	vga_solid_color/vga_mod.v	/^module vga_mod ($/;"	m
+vga_mod_tb	blockram_example/vga_mod_tb.v	/^module vga_mod_tb ();$/;"	m
+vga_mod_tb	vga_solid_color/vga_mod_tb.v	/^module vga_mod_tb ();$/;"	m
+vga_solid_color	blockram_example/vga_solid_color.v	/^module vga_solid_color ($/;"	m
+vga_solid_color	vga_solid_color/vga_solid_color.v	/^module vga_solid_color ($/;"	m
+vga_timing_mod	blockram_example/vga_timing_mod.v	/^module vga_timing_mod $/;"	m
+visible_range	blockram_example/vga_colors_mod.v	/^	input wire visible_range,$/;"	p	module:vga_colors_mod
+visible_range	blockram_example/vga_solid_color.v	/^wire visible_range;$/;"	n	module:vga_solid_color
+visible_range	blockram_example/vga_timing_mod.v	/^	output wire visible_range,$/;"	p	module:vga_timing_mod
+vsync	blockram_example/vga_mod_tb.v	/^  wire vsync;$/;"	n	module:vga_mod_tb
+vsync	blockram_example/vga_timing_mod.v	/^	output wire vsync,$/;"	p	module:vga_timing_mod
+vsync	vga_solid_color/vga_mod.v	/^	output vsync,$/;"	p	module:vga_mod
+vsync	vga_solid_color/vga_mod_tb.v	/^  wire vsync;$/;"	n	module:vga_mod_tb
+w_addr	03_blockram/implicit_blockram.v	/^	input wire [7:0] w_addr,$/;"	p	module:implicit_blockram
+w_addr	blockram_example/implicit_blockram.v	/^	input wire [7:0] w_addr,$/;"	p	module:implicit_blockram
+w_en	03_blockram/implicit_blockram.v	/^	input wire w_en,$/;"	p	module:implicit_blockram
+w_en	blockram_example/implicit_blockram.v	/^	input wire w_en,$/;"	p	module:implicit_blockram
+x	FIR_Filter/sympy/filter_script.py	/^x = Symbol('x')$/;"	v
+y	FIR_Filter/sympy/filter_script.py	/^y = []$/;"	v
