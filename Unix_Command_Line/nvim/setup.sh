@@ -3,7 +3,7 @@
 
 # neovim setup
 
-sudo apt-get install -y libtool autoconf automake cmake libncurses5-dev g++
+sudo apt-get install -y curl libtool autoconf automake cmake libncurses5-dev g++
 
 sudo apt-get install python-dev python-pip python3-dev python3-pip
 sudo add-apt-repository ppa:neovim-ppa/unstable
@@ -18,8 +18,17 @@ sudo chown root:root: nvim
 sudo mv nvim /usr/bin
 
 mkdir -p ~/.config/nvim
-cp ./my-init.vim ~/.config/nvim/init.vim
+cp ./modern-init.vim ~/.config/nvim/init.vim
 
 # vimplug setup
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
+# get vimplug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+	       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+
+echo "now open up nvim and type: PlugInstall"
+nvim +PlugInstall +qall
