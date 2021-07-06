@@ -32,12 +32,12 @@ set list listchars=tab:»·,trail:·
 " workaround for nvim git gutter onload glitch (w/o this must press cntl-c
 " after starting nvim to load screen
 let g:gitgutter_enabled = 0
-au VimEnter * :GitGutterEnable   
+au VimEnter * :GitGutterEnable
 
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')   
+call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
@@ -89,6 +89,7 @@ Plug 'luochen1990/rainbow'
 " styles
 Plug 'morhetz/gruvbox'
 Plug 'crusoexia/vim-monokai'
+Plug 'ap/vim-css-color'
 
 " comments and repeat commands
 Plug 'tpope/vim-commentary'
