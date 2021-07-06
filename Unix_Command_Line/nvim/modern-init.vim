@@ -1,19 +1,43 @@
 let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips/', 'UltiSnips']
 
 
+func! GoogleSpacing()
+  set tabstop=2
+  set shiftwidth=2
+  set expandtab
+  retab
+endfunction
+
+func! FourSpacing()
+  set tabstop=4
+  set shiftwidth=4
+  set expandtab
+  retab
+endfunction
+
+command GoogleSpacing call GoogleSpacing()
+command FourSpacing call FourSpacing()
+
+" Default to Google Style Spacing
+GoogleSpacing
+
 " looks upward for tags
 set tags=./tags,tags;
 
+" highlight and show trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+let c_space_errors = 1
+set list listchars=tab:»·,trail:·
 
 " workaround for nvim git gutter onload glitch (w/o this must press cntl-c
 " after starting nvim to load screen
 let g:gitgutter_enabled = 0
-au VimEnter * :GitGutterEnable
+au VimEnter * :GitGutterEnable   
 
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.vim/plugged')   
 
 " Make sure you use single quotes
 
@@ -53,21 +77,18 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-obsession'
 Plug 'craigemery/vim-autotag'
 
-
-" vim wiki : D
-Plug 'vimwiki/vimwiki'
-
 " gitrelated
-
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 " Lisp?
 Plug 'jpalardy/vim-slime'
-"interferes with vimwiki
 Plug 'luochen1990/rainbow'
+
+" styles
 Plug 'morhetz/gruvbox'
+Plug 'crusoexia/vim-monokai'
 
 " comments and repeat commands
 Plug 'tpope/vim-commentary'
@@ -92,7 +113,8 @@ let g:rainbow_active = 1
 autocmd FileType vimwiki :RainbowToggle
 
 set termguicolors
-colorscheme gruvbox
+" colorscheme gruvbox
+colorscheme monokai
 let g:go_gopls_enabled = 1
 
 autocmd	BufNewFile * silent! 0r $HOME/.vim/templates/%:e.skeleton
