@@ -1,0 +1,16 @@
+using sysbus
+
+mach create
+machine LoadPlatformDescription @platforms/cpus/stm32f103.repl
+machine LoadPlatformDescriptionFromString "button: Miscellaneous.Button @ gpioPortC 13 { IRQ -> gpioPortC@13 }"
+
+$bin?=@renode_test_2.elf
+
+showAnalyzer usart1
+
+macro reset
+"""
+    sysbus LoadELF $bin
+"""
+
+runMacro $reset
