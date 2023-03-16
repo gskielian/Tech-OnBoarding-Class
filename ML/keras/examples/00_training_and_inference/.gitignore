@@ -1,0 +1,7 @@
+data/
+*.h5
+*.json
+*.tflite
+
+.archive/
+output/

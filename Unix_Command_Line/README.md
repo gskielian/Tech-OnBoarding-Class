@@ -10,5 +10,6 @@ This module covers topics for proficiency with Unix and CLI tools
 - [ ] git and github-like-site usage
 - [ ] getting new software -- apt-get, ppa's, package managers
 - [x] vim
+- [x] nvim
 - [x] emacs
 - [ ] bash scripting, and sed/awk/grep

@@ -1,0 +1,5 @@
+(("Default" 0 T NIL :CLASS "Gnome-terminal" :INSTANCE "gnome-terminal-server"
+  :TITLE NIL :ROLE
+  "terminal")
+ ("Default" 1 T NIL :CLASS "Google-chrome" :INSTANCE "google-chrome" :TITLE NIL
+  :ROLE "browser"))

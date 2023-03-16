@@ -1,0 +1,130 @@
+;; -*- lisp -*-
+;; setlocal filetype=lisp
+;; enable rainbow using luochen1990/rainbow
+
+
+
+;; hjkl movements between frames
+
+
+(defvar hjkl-movements
+(let ((m (stumpwm:make-sparse-keymap)))
+(stumpwm:define-key m (stumpwm:kbd "C-j") "move-focus down")
+(stumpwm:define-key m (stumpwm:kbd "C-k") "move-focus up")
+(stumpwm:define-key m (stumpwm:kbd "C-l") "move-focus right")
+(stumpwm:define-key m (stumpwm:kbd "C-h") "move-focus left")
+(stumpwm:define-key m (stumpwm:kbd "j") "move-window down")
+(stumpwm:define-key m (stumpwm:kbd "k") "move-window up")
+(stumpwm:define-key m (stumpwm:kbd "l") "move-window right")
+(stumpwm:define-key m (stumpwm:kbd "h") "move-window left")
+m  ;
+))
+(stumpwm:define-key stumpwm:*root-map* (stumpwm:kbd "C-f") hjkl-movements)
+
+
+;; Application Shortcuts
+
+(defcommand google-chrome () ()
+  "start google chrome or switch to it if running"
+  (run-or-raise "google-chrome-stable" '(:class "Google-Chrome")))
+(define-key *root-map* (kbd "G") "google-chrome")
+
+(defcommand gnome-terminal () ()
+  "start google chrome or switch to it if running"
+  (run-or-raise "gnome-terminal" '(:class "Gnome-Terminal")))
+
+
+
+;; Setup save of shapes of things
+
+
+(defcommand sd () () 
+	    "dump current desktop to file 'stumpdump'"
+	    (dump-desktop-to-file "~/.stumpdump"))
+
+(defcommand rd () () 
+	    "restore desktop from 'stumpdump'"
+	    (restore-from-file "~/.stumpdump"))
+
+
+;; ModeLine
+
+(setf *window-format* "%m%n%s%c")
+(setf *screen-mode-line-format* (list "[^B%n^b] %W^>%d"))
+(setf *time-modeline-string* "%a %b %e %k:%M")
+(setf *mode-line-timeout* 2)
+(enable-mode-line (current-screen) (current-head) t)
+
+
+
+;; VOLUME CONTROLS
+
+;;(define-key *top-map*  (kbd "Caps Lock") "notify-caps")
+(define-key *root-map* (kbd "C-(")  "vol-down")
+(define-key *root-map* (kbd "C-)")  "vol-up")
+(define-key *root-map* (kbd "C-_")  "vol-mute")
+(define-key *root-map* (kbd "C-+")  "vol-unmute")
+
+(defcommand vol-up () () 
+    "volume up"
+    (run-shell-command "amixer set 'Master' 10%+")
+    (echo "volume up")
+    )
+
+(defcommand vol-down () () 
+    "volume down"
+    (run-shell-command "amixer set 'Master' 10%-")
+    (echo "volume down")
+    )
+
+(defcommand vol-mute () () 
+    "volume mute"
+    (run-shell-command "amixer set Master mute")
+    (echo "volume unmute")
+    )
+    
+(defcommand vol-unmute () () 
+    "volume unmute"
+    (run-shell-command "amixer set Master unmute")
+    (echo "volume unmute")
+    )
+
+
+;; Window Arrangement
+
+;; define-frame-preference target-group rest frame-rules
+
+
+;; lock screen (requires xtrlock)
+(defcommand lock-screen()()
+    (run-shell-command "xtrlock -b")(message "screen locked"))
+(define-key *root-map* (kbd "C-l") "lock-screen")
+
+;; screenshot
+(defcommand screenshot-region () ()
+    (run-shell-command "gnome-screenshot -a")(message "screenshot"))
+(define-key *root-map* (kbd "C-,") "screenshot-region")
+
+
+;; startup message
+
+(setf *startup-message* "welcome to stumpwm :D")
+
+;; procedure: 
+;;1. run `remember` on each window
+;;2. use `dump-window-placement-rules` to certain file (nour case ~/.stump_window)
+;;3. use `dump-desktop-to-file` (our case ~/.stump_desk)
+;;4. use `dump-group-to-file`
+;;5. use `dump-screen-to-file`
+
+(clear-window-placement-rules)
+(refresh-heads)
+
+(restore-from-file "~/.stump_desk")
+(restore-window-placement-rules "~/.stump_window")
+(place-existing-windows)
+
+
+;; create windows to be placed in correct locations
+(google-chrome)
+(gnome-terminal)
